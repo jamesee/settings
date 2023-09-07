@@ -1,0 +1,7 @@
+# This file is created by ibus-daemon, please do not modify it.
+# This file allows processes on the machine to find the
+# ibus session bus with the below address.
+# If the IBUS_ADDRESS environment variable is set, it will
+# be used rather than this file.
+IBUS_ADDRESS=unix:abstract=/home/jee/.cache/ibus/dbus-iByRlT9B,guid=d051b0acc9e4c5359d28903c64f96e57
+IBUS_DAEMON_PID=71046
