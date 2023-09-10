@@ -22,7 +22,7 @@ filetype plugin on
 filetype indent on
 
 " Turn syntax highlighting on.
-syntax on
+"syntax on
 
 " Add numbers to each line on the left-hand side.
 set number
@@ -90,7 +90,7 @@ set wildmode=list:longest
 " Wildmenu will ignore files with these extensions.
 "set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
-" Fix backspace not working
+" To enable backspace 
 set backspace=indent,eol,start
 
 " STATUS LINE ------------------------------------------------------------ {{{
@@ -116,3 +116,18 @@ set laststatus=2
 set listchars+=tab:>-
 set listchars+=eol:$
 
+
+" PLUGIN ----------------------------------------------------------------- {{{
+" 42 Header
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'pandark/42header.vim'
+
+" Add plugins here
+
+call vundle#end()
+filetype plugin indent on
+nmap <f1> :FortyTwoHeader<CR>
